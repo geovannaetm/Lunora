@@ -1,0 +1,62 @@
+.topo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    background-color: #eb97a4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    
+}
+
+.topo picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+
+}
+
+.topo nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.topo nav a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    padding: 8px 12px;
+    transition: all 0.3 ease;
+}
+
+.topo nav a:hover{
+    background-color: white;
+    color: #eb97a4;
+    border-radius: 4px;
+}
+
+/*Responsividade*/
+@media(max-width: 768px){
+    .topo{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    .topo picture{
+        max-width: 100px;
+        margin-bottom: 0;
+    }
+
+    .topo nav a{
+        font-size: 12px;
+    }
+}
